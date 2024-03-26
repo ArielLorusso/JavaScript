@@ -1,0 +1,28 @@
+
+body
+{
+    background-image: url("CentralPark.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    background: linear-gradient(to right, skyblue, white) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+h2{
+    background: linear-gradient(to left, skyblue, white) ;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    
+}
+
+p{
+    background: linear-gradient(to left, skyblue, white) ;
+    text-shadow:maroon;
+    font-weight:bolder;
+}

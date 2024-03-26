@@ -1,0 +1,40 @@
+
+body{/* -----------  BODY type ---------*/
+    margin: 0px;
+}
+main{/* -----------  MAIN type ---------*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{  /* ------------  HEADER_1 type ---------*/ 
+     text-align: center;
+}
+
+/*######  navbar class descendence ######################### 
+--------  ul (UNORDER LIST type ) ----------------*/
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+/*-------  a ( HYPERLINK  type ) ----------------*/
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{         /* -----  when hover ----------------*/
+    background-color: hsl(0, 0%, 10%);
+}
+/*-------  li ( LIST_ITEM type ) ----------------*/
+.navbar li{
+    float: left;
+}
+.navbar #active {
+    color: white;
+    background-color: green;
+}

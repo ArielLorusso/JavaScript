@@ -1,0 +1,42 @@
+// This course focuses on snowpack
+SMALL SIMPLE BUNDLERS
+    PARCEL /* 
+        WHAT IS https://parceljs.org/
+          A zero configuration build tool for the web:
+            JS CSS HTML TS React WebGL GraphQL XML
+            images SASS SVG Vue Elm Electron
+            libraries Less Node Stylus Pug extensions .MDX 
+        .
+        INSTALL https://parceljs.org/getting-started/webapp/
+                npm install --save-dev parcel
+            Start it, 
+            run the parcel CLI pointing to your entry file:
+                npx parcel src/index.html
+            
+            Now open http://localhost:1234/ in your browser to see the HTML file created above.
+            As you make changes, you should see your app automatically update in the browser without even refreshing the page!
+        .   
+        FEATURES  https://parceljs.org/docs/             
+            ▶ Hot reloading
+            When you make a change, Parcel automatically updates your code in the browser – no page reload necessary!      
+            ▶ Dev server
+            By default, it starts a server at http://localhost:1234. If port 1234 is already in use, then a fallback port will be used.
+            ▶ HTTPS  
+            dev server supports HTTPS out of the box. You can either use an automatically generated certificate, or provide your own.
+            ▶ API proxy
+            you can specify paths that should be proxied to another server (e.g. your real API server or a local testing server) in a .proxyrc
+            ▶ Auto install
+            When you use a language or plugin that isn’t included by default, Parcel will automatically install the necessary dependencies into your project for you. 
+            supported, listed in priority order:
+                Yarn  Pnpm  Npm                                      */
+        .
+    SNOWPACK
+        https://www.snowpack.dev/
+        https://www.snowpack.dev/concepts/dev-server
+        https://www.snowpack.dev/tutorials/quick-start
+    .
+BIG COMPLEX FLEXIBLE BUNDLERS
+    WEBPACK
+        https://webpack.js.org/
+    ROLLUP 
+        https://rollupjs.org/

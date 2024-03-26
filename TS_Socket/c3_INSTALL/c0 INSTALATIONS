@@ -1,0 +1,18 @@
+
+    COURSE PAGE
+https://sbcode.net/tssock/
+https://www.youtube.com/watch?v=OKoJAIvpPqY&list=PLKWUX7aMnlEI0vR_ErEXu-U9m-qjkK8vg&index=3
+
+    MINT PACKAGES
+https://linuxhint.com/manage-packages-linux-mint/
+
+    NODE.JS + NPM (Node Package Manager)
+https://nodejs.org/en/download  (WINDOWS)
+https://nodejs.org/en/download/package-manager  (LINUX)
+https://github.com/nodesource/distributions#debmanual (UBUNTU)
+    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - &&\  
+    sudo apt-get install -y nodejs
+
+    TypeScript
+ sudo npm install -g typescript
+

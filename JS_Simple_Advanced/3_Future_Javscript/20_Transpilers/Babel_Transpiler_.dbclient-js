@@ -1,0 +1,108 @@
+/* Babel.js   https://babeljs.io/repl
+   Transpiles ftom moder JS to old JS equivalent
+*/ https://babeljs.io/docs/options
+
+// INPUT : 8 simple lines
+{
+    const person = {
+        name:"kyle",
+        address:{
+          street: "1234"
+        }
+    }
+    console.log(person?.addres?.street)
+    const clone = {... person}    
+}
+// OUTPUT : 20 unreadable lines
+//           @ Babel 7.22.2  ENV PRESET -> Node 7
+{
+    const person = {
+        name: "kyle",
+        address: {
+            street: "1234"
+        }
+    }
+    ////////    const clone = {... person}   
+    const clone = _objectSpread({}, person);
+    function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+    function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+    function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+    function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+    function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+    ////// console.log(person?.addres?.street)  
+    var _person$addres
+    console.log(person === null || person === void 0  || 
+        (_person$addres = person.addres) === null || // asignation
+        _person$addres === void 0 ? 
+        void 0 : // ANY TRUE = FAIL -> return 0
+        _person$addres.street)
+        // ELSE  return erson.addres.street
+}
+// Pluggins : we can add functionalities
+.
+ SET UP BABEL : https://babeljs.io/docs/usage
+    TERMINAL
+        npm init -y  // package.json (project init)
+        npm install --save-dev @babel/core  @babel/cli 
+    //   npm install--save-dev @babel/core  @babel/cli @babel/preset-env
+    .
+    CREATE a ./src and ./out dierectories
+    .
+    Package.json :
+        "scripts": {
+            "build": "babel src -d out" }
+    .
+    src/scripts.js: // SAME AS ONLINE
+        const person = {
+            name:"kyle",
+            address:{
+                street: "1234"
+            }
+        }
+        console.log(person?.addres?.street)
+        const clone = {... person}
+    TERMINAL
+        npm install  @babel/preset-env --save-dev
+    CONFIG
+    //  Creating a config file named babel.config.json 
+    // in the root of your project with this content:
+    
+    // CONFIG AIMS TO SUPPORT NODE 7 
+    babel.config.json : 
+    {
+        "presets": [
+            [   "@babel/preset-env",
+                {
+                    "targets": {
+                    "node": "7" }
+                }
+            ]
+        ]
+    }
+    // THIS IS DEFAULT TARGETS
+        babel.config.json : 
+        {   "presets": [
+                [ "@babel/preset-env",
+                    {
+                        "targets": {
+                            "edge": "17",
+                            "firefox": "60",
+                            "chrome": "67",
+                            "safari": "11.1"
+                        },
+                        "useBuiltIns": "usage",
+                        "corejs": "3.6.5"  }
+                ]
+            ]
+        }
+    TERMINAL
+        npm run build
+        ./out/scripts.js : 
+         // SAME AS ONLINE VERSION
+.
+POLYFILL
+    https://babeljs.io/docs/babel-polyfill
+OPTIONS
+    https://babeljs.io/docs/options
+PLUGGINS
+    https://babeljs.io/docs/plugins

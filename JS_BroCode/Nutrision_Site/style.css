@@ -1,0 +1,100 @@
+/*  nested and next elements are drawn later
+    name  = by elements <name>
+    #name = by id="name"
+    .name = by class="name"
+     font-size: 100% ==  12pt ;
+*/
+body{ margin: 0px;}
+.menu_top{
+    background-color: rgb(111, 219, 255);  
+    height: 15vw; }
+.menu_top h1{ font-size: 5vw;
+    padding: 1vw;
+    border: solid 1vw;
+    margin: 0px;
+
+    border-radius: 2vw;
+    text-align:center;
+    text-shadow: 5px ;
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 149, 255);
+    text-shadow:  5px 5px 6px rgb(0, 104, 80) 
+                ,-5px -5px 6px rgb(24, 95, 226); 
+    box-shadow:  5px 5px 6px rgb(0, 104, 80) 
+                ,-5px -5px 6px rgb(24, 95, 226); 
+    /*Xpos,Ypos,spread,color*/}
+/*///////////////  NVAR   /////////////////////////*/
+.navbar {
+    height: 5vw;
+    background-color: hsl(200, 36%, 50%);
+    place-items: top;}
+.navbar li{
+    height: 5vw;
+    width: 15vw;
+    display: grid;
+    border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    place-items: center;
+    background-color: hsl(200, 66%, 30%);
+
+    top: -20px;}
+.navbar li:hover{
+    height: 5vw;
+    width: 15vw;
+    display: grid;
+    border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    place-items: center;
+    background-color: hsl(149, 66%, 30%);}
+.navbar a{
+    color:rgb(255, 255, 255);    
+    text-decoration: none;}
+/*-------  li ( LIST_ITEM type ) ----------------*/
+.navbar ul{
+    height: 5vw;
+    margin: 0px;
+    border-radius: 0px;
+    font-size: 3vw;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around ;}
+.navbar #active {
+    height: 5vw;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);   
+    text-shadow:  3px 3px 6px rgb(0, 0, 0),
+                -3px -3px 6px rgb(0, 0, 0); 
+    display: inline;
+    text-align: center;
+    font-weight:900;
+    background-color: hsl(215, 100%, 46%);}
+/*///////////////  CONTAINER  /////////////////////////*/
+.contain{
+    background-color: red;
+    width: 100%;
+    height: calc(100vh - 15vw); 
+    display:flex; /* https://devdocs.io/css/display */
+    overflow:scroll;}
+/*///////////////  SIDE MENU  /////////////////////////*/
+.menu_side {
+    background-color: aqua;
+    width:15vw;
+    height: calc(100vh - 15vw); 
+    
+    /*float: left; https://devdocs.io/css/float*/
+    position: absolute;
+    top: 15vw;}
+/*///////////////  CONTENT   /////////////////////////*/
+.content{
+    background-color: rgb(181, 248, 236);
+    text-align: center;
+    width: calc(100% - 15vw); /* viewport width   https://www.w3schools.com/cssref/css_units.php*/
+    height: 200vh;             /* viewport height  */
+
+    position:relative;
+    left: 15vw;}
+.content h3{ color: blue;
+    font-size: 4vw;}
+.content p{ font-size: 3vW;}

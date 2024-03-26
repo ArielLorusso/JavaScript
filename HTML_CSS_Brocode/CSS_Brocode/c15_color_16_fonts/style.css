@@ -1,0 +1,28 @@
+body{ 
+    background-color:bisque;
+    border-left-color: blue; 
+}
+
+        /* GOOGLE FONTS  */
+h1{ font-family: "Pacifico","Cedarville Cursive","consolas";
+    
+    /* COLOURS  name  #hexa RGB(255,0,0)  hsl(%,%,%)  */
+    background-color: burlywood ;
+    border: 5px solid; 
+    border-radius: 20px ; color:#af0000;
+    border-color: hsl(24, 45%, 41%);
+    text-align: center;
+ }
+
+h2{ 
+    font-family: "Press Start 2P","consolas";
+    text-decoration: underline;
+}
+
+p{  font-family: "Baumans","consolas", sans-serif;
+    font-style : italic ;
+    font-weight : bold ;
+    font-size: 25px ;
+    background-color:hwb(15 66% 0%); color:hsl(0, 100%, 27%) ;
+
+}

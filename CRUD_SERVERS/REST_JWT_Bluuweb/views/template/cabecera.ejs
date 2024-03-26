@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Template + <%= pestania %> </title>
+    
+                           <!--  ./  == public -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <%- include(  "navbar"   )  %> 
+<!-- NUNCA comentar '< %'  sin espacio  TRAE ERROR
+
+cabecera will be included in evey .ejs file
+
+INCLUDES 
+    https://ejs.co/#docs:~:text=whitespace%20after%20it-,Includes,-Includes%20are%20relative 
+TABS
+    https://ejs.co/#install:~:text=the%20JS%20runtime.-,Tags,-%3C%25%20%27Scriptlet%27%20tag
+-->

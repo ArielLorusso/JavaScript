@@ -1,0 +1,26 @@
+div{
+    background-color: hsl(0, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+span{
+    background-color: hsl(204, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: inline;
+    display:none;
+    display:inline-block;
+}
+/*
+    display: block  ;       takes all horizontal space
+    display: inline ;       takes just text space 
+    display:inline-block;   takes just necesary space
+
+/*
+
+
+/*
+    display: none;        eliminates from display
+    visivility :hidden;   lets void space
+/*

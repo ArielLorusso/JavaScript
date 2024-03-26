@@ -1,0 +1,18 @@
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 20pt;
+    text-align: center;
+    background: tomato;
+    float:right;
+}
+.imag{
+    float:inline-start ;
+}
+
+p{
+    clear:left;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "c9_socket_io",
+  "version": "1.0.0",
+  "description": "",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" "
+  },
+  "author": "Ariel",
+  "license": "ISC"
+}

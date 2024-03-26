@@ -1,0 +1,6 @@
+#myDiv{
+    background-color: hsl(0, 100%, 50%);
+    width: 100px;
+    height: 100px;
+    position: relative;
+}

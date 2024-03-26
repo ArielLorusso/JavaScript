@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Complatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Sounds</title>
+    <link rel="stylesheet" href="style.css">
+    <!--  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    -->
+
+  </head>
+
+  <body>
+
+
+    <h1> MAJ vs MIN </h1>
+    
+    <button class='Gen' id="gen_button_1">   GENERATE </button>
+    <button class='Gen' id="gen_button_1-2"> RE-LISTEN </button>
+    
+    <div>
+      <input type="radio" id="Radio_Maj" name="MajMin" value="email" />
+      <label for="Radio_Maj">MAJOR</label>
+
+      <input type="radio" id="Radio_Min" name="MajMin" value="phone" />
+      <label for="Radio_Min"> Minor</label>
+
+      <input type="submit" value="Submit">
+    </div>
+    
+
+    <h1> Guess interval </h1>
+
+    <button class='Gen' id="gen_button_2"> 
+      GENERATE </button>
+    
+    <form>
+        <select id="cars" name="cars">
+        <option value="2m">2m</option>
+        <option value="2" >2 </option>
+        <option value="3m">3m</option>
+        <option value="3" >3 </option>
+        <option value="4" >4 </option>
+        <option value="5m">5m</option>
+        <option value="5" >5 </option>
+        <option value="6m">6m</option>
+        <option value="6" >6 </option>
+        <option value="7m">7m</option>
+        <option value="7" >7 </option>
+        <option value="8" >8 </option>
+      </select>
+    </form>
+    
+    
+    
+    <h1> Melody Generator</h1>
+
+    <form>
+      <input type="text" 
+      placeholder="Lower case, all one word" >
+    </form>
+
+  </body>
+
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,40 @@
+/*####     Dropdown  class      ##########################*/
+.dropdown{
+    display: inline-block;
+}
+/* -----  Dropdown descendence  (CONTENT class ) ----------------*/
+.dropdown .content{
+    display: none;   /* -- hidden --*/
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+   /* min-width: 100px; -- avoids cliping--*/ 
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{   /* -----  when hover ----------------*/
+    width: 5%; /* (of window)
+    overflow: clip; scroll ;  */
+    display: block; /*     -- show  below--*/    /*
+    display: inline block; -- show  to side--*/
+}
+/* -----  Dropdown descendence  ( BUTTON type ) ----------------*/
+.dropdown button{
+    background-color: hsl(0, 0%, 70%);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown:hover button{     /* -----  when hover ----------------*/
+    background-color: hsl(0, 0%, 50%);
+    color: white;
+}
+/* -----  Dropdown descendence  a ( HIPERLINKS type ) ----------------*/
+.dropdown a{ 
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.dropdown a:hover{          /* -----  when hover ----------------*/
+    background-color: hsl(0, 0%, 80%);
+}

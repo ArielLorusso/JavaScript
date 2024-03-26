@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- BUTTON & FUNCTION onclick = func()-->
+    <button onclick = "doSomething()"  
+            style = "font-size:50px; 
+            background-color:grey; 
+            color:lightblue; 
+            border-color: red;
+            border-width: 10pt;
+            border-radius:15px; 
+            border-top-color: green;
+            border-top-width: 20pt;
+            border-top-style: dotted;"
+            > 
+    click me </button>
+
+    <!-- BUTTON WILL CHANGE THIS PARAGRAPH -->
+    <p id="greeting">Hello</p>
+
+
+    <script>      // JAVASCIPT INTERNAL
+        function doSomething(){
+            document.getElementById("greeting").innerHTML 
+            = "Goodbye";
+        }
+    </script>
+</body>
+</html>

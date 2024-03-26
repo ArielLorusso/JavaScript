@@ -1,0 +1,689 @@
+https://www.w3schools.com/html/
+https://www.w3schools.com/html/exercise.asp
+
+https://devdocs.io/css/syntax
+https://devdocs.io/css/css_selectors
+https://devdocs.io/css/layout_mode
+------------------------------------
+https://devdocs.io/css/css_positioning
+https://devdocs.io/css/position
+https://www.w3schools.com/css/css_boxmodel.asp
+https://devdocs.io/css/border
+https://www.w3schools.com/css/css_outline.asp
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/css/css_float.asp
+https://devdocs.io/css/bottom
+https://devdocs.io/css/overflow
+https://devdocs.io/css/scroll-behavior
+https://devdocs.io/css/scroll-snap-type
+https://devdocs.io/css/calc
+https://devdocs.io/css/display
+-----------------------------------------
+https://devdocs.io/css/cursor
+https://devdocs.io/css/resize
+https://devdocs.io/css/direction
+https://devdocs.io/css/css_flow_layout/flow_layout_and_writing_modes
+
+https://devdocs.io/css/css_table
+https://devdocs.io/css/row-gap
+https://devdocs.io/css/css_flexible_box_layout
+https://devdocs.io/css/css_grid_layout
+https://devdocs.io/css/css_fonts/variable_fonts_guide
+
+https://devdocs.io/css/css_images/using_css_gradients
+https://devdocs.io/css/gradient/linear-gradient
+https://devdocs.io/css/basic-shape
+https://devdocs.io/css/shape-margin
+https://devdocs.io/css/background
+https://devdocs.io/css/filter_effects
+https://devdocs.io/css/clip-path
+https://devdocs.io/css/opacity
+https://devdocs.io/css/clear
+-----------------------------------------
+https://devdocs.io/css/animation
+https://devdocs.io/css/css_animations/using_css_animations
+https://devdocs.io/css/transition
+https://devdocs.io/css/offset
+https://devdocs.io/css/rotate
+https://devdocs.io/css/scale
+https://devdocs.io/css/transform-function/matrix
+https://devdocs.io/css/transform-function/perspective
+
+https://devdocs.io/css-selectors/
+https://devdocs.io/css/:first-child
+https://devdocs.io/css/:active
+https://devdocs.io/css/:focus
+https://devdocs.io/css/::selection
+-----------------------------------
+https://devdocs.io/css/::file-selector-button
+https://devdocs.io/css/:checked
+https://devdocs.io/css/:autofill
+https://devdocs.io/css/:invalid
+https://devdocs.io/css/:optional
+https://devdocs.io/css/counters
+
+https://devdocs.io/css/:local-link
+https://devdocs.io/css/@namespace
+
+
+
+HTML Tags
+		Deprecated Tags
+		HTML Global Attributes
+		Event Attributes
+		<!-- ... -->
+		<!DOCTYPE>
+		<a>
+		<abbr>
+		<acronym>
+		<address>
+		<applet>
+		<area>
+		<article>
+		<aside>
+		<audio>
+		<b>
+		<base>
+		<basefont>
+		<bdi>
+		<bdo>
+		<big>
+		<blink>
+		<blockquote>
+		<body>
+		<br>
+		<button>
+		<canvas>
+		<caption>
+		<center>
+		<cite>
+		<code>
+		<col>
+		<colgroup>
+		<data>
+		<datalist>
+		<dd>
+		<del>
+		<details>
+		<dfn>
+		<dialog>
+		<dir>
+		<div>
+		<dl>
+		<dt>
+		<em>
+		<embed>
+		<fieldset>
+		<figcaption>
+		<figure>
+		<font>
+		<footer>
+		<form>
+		<frame>
+		<frameset>
+		<h1>-<h6>
+		<head>
+		<header>
+		<hgroup>
+		<hr>
+		<html>
+		<i>
+		<iframe>
+		<img>
+		<input>
+		<ins>
+		<isindex>
+		<kbd>
+		<keygen>
+		<label>
+		<legend>
+		<li>
+		<link>
+		<main>
+		<map>
+		<mark>
+		<marquee>
+		<menu>
+		<menuitem>
+		<meta>
+		<meter>
+		<nav>
+		<nobr>
+		<noframes>
+		<noscript>
+		<object>
+		<ol>
+		<optgroup>
+		<option>
+		<output>
+		<p>
+		<param>
+		<plaintext>
+		<picture>
+		<pre>
+		<progress>
+		<q>
+		<rb>
+		<rp>
+		<rt>
+		<rtc>
+		<ruby>
+		<s>
+		<samp>
+		<script>
+		<section>
+		<select>
+		<small>
+		<source>
+		<spacer>
+		<span>
+		<strike>
+		<strong>
+		<style>
+		<sub>
+		<summary>
+		<sup>
+		<svg>
+		<table>
+		<tbody>
+		<td>
+		<template>
+		<textarea>
+		<tfoot>
+		<th>
+		<thead>
+		<time>
+		<title>
+		<tr>
+		<track>
+		<tt>
+		<u>
+		<ul>
+		<var>
+		<video>
+		<wbr>
+		<xmp>
+
+HTML  Attribute		Belongs to			Description
+		accept			<input>				Defines the kinds of files that are accepted by the server (only for type="file").
+		accept-charset	<form>				Defines the character encodings used for the form submission.
+		accesskey		Global Attributes	Defines a shortcut key that will activate an element.
+		action			<form>				Defines where the form-data should be sent when a form is submitted.
+		align		HTML5 doesn’t support.	Defines the alignment according to nearby elements. CSS can be used instead of this attribute.
+		alt		<area>, <img>, <input>		Defines an alternate text if the original element doesn’t display.
+		async	<script>					Defines that the script is executed asynchronously. It is used only for external scripts.
+		autocomplete	<form>, <input>		Defines whether the autocomplete of the <form> or the <input> elements should be enabled.
+		autofocus	<button>, <input>, <select>, <textarea>	Defines that the element must automatically get focus when the page loads.
+		autoplay	<audio>, <video>		Defines that the audio or video will start playing when it is ready.
+		bgcolor		HTML5 doesn’t support	Defines the background color of an element. CSS can be used instead of this attribute.
+		border		HTML5 doesn’t support	Defines the width of the border of an element. CSS can be used instead of this attribute.
+		charset		<meta>, <script>		Defines the character encoding.
+		checked	<input>	Defines that an <input> element must be pre-selected when the page loads (for type="checkbox" or type="radio").
+		cite	<blockquote>, <del>, <ins>, <q>	Defines a URL explaining the quote, deleted or inserted text.
+		class								Defines one or more classnames for an element.
+		color	HTML5 doesn’t support .		Defines the text color of an element. CSS can be used instead of this attribute.
+		cols	<textarea>					Defines the visible width of a text area.
+		colspan	<td>, <th>					Defines the number of columns that should be spanned by a table cell.
+		content	<meta>	Gives the value related the http-equiv or name attribute.
+		contenteditable	Global Attributes	Defines whether the content of an element can be edited or not.
+		controls	<audio>, <video>		Defines that audio or video controls must be displayed (for example a play or pause button and so on).
+		coords	<area>						Defines the coordinates of the area.
+		data	<object>					Defines the URL of the resource that will be used by the object.
+		data-*	Global Attributes			Stores custom data private to the page or application.
+		datetime	<del>, <ins>, <time>	Defines the date and time.
+		default	<track>						Defines that the track will be enabled if the preferences of the user don’t point out that another track would be more proper.
+		defer	<script>					Defines that the script is executed when the page finishes parsing. This attribute is used only for external scripts.
+		dir	Global Attributes				Defines the text direction for an element’s content.
+		dirname	<textarea>, <input>			Defines that the text direction will be submitted.
+		disabled	<button>, <fieldset>, <input>, <optgroup>, <option>, <select>, <textarea>	Defines that the specified element or group of elements must be disabled.
+		download	<a>, <area>				Defines that the target will be downloaded when a user clicks on the hyperlink.
+		draggable	Global Attributes		Defines if an element is draggable or not.
+		dropzone	Global Attributes		Defines if the dragged data is copied, moved, or linked, when it is dropped.
+		enctype	<form>						Defines how the form-data should be encoded when it is submitted to the server. This attribute is used only for method="post".
+		for	<label>, <output>				Specifies which form element(s) a label or calculation is linked to.
+		form	<button>, <fieldset>, <input>, <label>,<meter>, <object>, <output>, <select>, <textarea>	Defines the name of the form that the element belongs to.
+		formaction	<button>, <input>		Defines where to send the form-data when a form is submitted. This attribute is used only for type="submit".
+		headers	<th>, <th>					Defines one or more headers cells a cell is connected with.
+		height	<canvas>, <embed>, <iframe>, <img>,<input>, <object>, <video>	Defines the height of the element.
+		hidden	Global Attributes			Defines that an element yet is not relevant.
+		high	<meter>	<meter>
+		href	<a>, <area>, <base>, <link>	Defines the URL of the page where the link goes to.
+		hreflang	<a>, <area>, <link>		Defines the language of the linked document.
+		http-equiv	<meta>					Gives the content attribute an HTTP header for the information or value.
+		id	Global Attributes				Defines a unique id for an element.
+		ismap	<img>>						Defines an image as a server-side image-map.
+		kind	<track>						Defines the kind of text track. /td>
+		label	<track>, <option>, <optgroup>	Defines the title of the text track.
+		lang	Global Attributes			Defines the language of the content of an element.
+		list	<input>	Cites a <datalist> element containing pre-defined options for an <input> element.
+		loop	<audio>, <video>			Defines that the audio or video will start again, every time when it is finished.
+		low	<meter>							Defines the range considered to be a low value.
+		max	<input>, <meter>,<progress>		Defines the maximum value.
+		maxlength	<input>, <textarea>		Defines the maximum number of characters that an element can contain.
+		media	<a>, <area>, <link>, <source>, <style>	Defines what media or device the linked document is optimized for.
+		method	<form>						Defines the HTTP method that should be used when sending form-data.
+		min	<input>, <meter>				Defines a minimum value.
+		multiple	<input>, <select>		Defines that more than one value can be entered by the user.
+		muted	<audio>, <video>			Defines that the audio output of the video must be muted.
+		name	<button>, <fieldset>, <form>, <iframe>, <input>, <map>, <meta>, <object>, <output>, <param>, <select>, <textarea>	Defines the name of the element.
+		novalidate	<form>					Defines that the form mustn’t be validated when it is submitted.
+		onabort	<audio>, <embed>, <img>, <object>, <video>	Script that runs on abort.
+		onafterprint	<body>	Script that runs after the document is printed.
+		onbeforeunload	<body>	Script that runs when the document is going to be unloaded.
+		onblur	All visible elements.	Script that runs when the element loses its focus.
+		oncanplay	<audio>, <embed>, <object>, <video>	Script that runs when a file is ready to start playing.
+		oncanplaythrough	<audio>, <video>	Script that runs when a file can be played till the end without pausing for buffering.
+		onchange	All visible elements.	Script that runs when the value of the element is changed.
+		onclick		All visible elements.	Script that runs when the element is clicked.
+		oncontextmenu	All visible elements.	Script that runs when a context menu is triggered.
+		oncopy		All visible elements.	Script that runs when the content of the element is copied.
+		oncuechange	<track>	Script that runs when the cue in a <track> element changes.
+		oncut		All visible elements.	Script that runs when the content of the element is cut.
+		ondblclick	All visible elements.	Script that runs when the element is double-clicked.
+		ondrag		All visible elements.	Script that runs when the element is dragged.
+		ondragend	All visible elements.	Script that runs at the end of a drag operation.
+		ondragenter	All visible elements.	Script that runs when an element has been dragged to a valid drop target.
+		ondragleave	All visible elements.	Script that runs when an element leaves a valid drop target.
+		ondragover	All visible elements.	Script that runs when an element is dragged over a valid drop target.
+		ondragstart	All visible elements.	Script that runs at the start of a drag operation.
+		ondrop		All visible elements.	Script that runs at the beginning of a drag operation.
+		ondurationchange	<audio>, <video>	Script that runs when the length of the media changes.
+		onemptied	<audio>, <video>	Script that runs when something unexpected happens and the file becomes unavailable.
+		onended	<audio>, <video>	Script that runs when the media reaches the end.
+		onerror	<audio>, <video>, <embed>, <object>, <script>, <style>, <body>	
+		onfocus	All visible elements.	Script that runs when the element gets focus.
+		onhashchange	<body>	Script that runs when the anchor changes.
+		oninput	All visible elements.	Script that runs when the element catches user input.
+		oninvalid	All visible elements.	Script that runs when the element is invalid.
+		onkeydown	All visible elements.	Script that runs when a user is pressing a key.
+		onkeypress	All visible elements.	Script that runs when a user presses a key.
+		onkeyup		All visible elements.	Script that runs when a user releases a key.
+		onload	<body>, <iframe>, <input>, <img>>, <script>, <style>, <link>	Script that runs when the loading of the finishes.
+		onloadeddata	<audio>, <video>	Script that runs when media data is loaded.
+		onloadedmetadata	<audio>, <video>	Script that runs when meta data is loaded.
+		onloadstart	<audio>, <video>	Script that runs when the file starts loading, before anything is actually loaded.
+		onmousedown	All visible elements.	Script that runs when a mouse button presses down on an element.
+		onmousemove	All visible elements.	Script that runs as far as the mouse pointer is moving over an element.
+		onmouseout	All visible elements.	Script that runs when a mouse pointer leaves an element.
+		onmouseup	All visible elements.	Script that runs when a mouse button is released over an element.
+		onmouseover	All visible elements.	Script that runs when a mouse pointer moves over an element.
+		onmousewheel	All visible elements.	Script that runs when a mouse wheel scrolls over an element.
+		onoffline	<body>					Script that runs when the browser starts working offline.
+		ononline	<body>					Script that runs when the browser starts working online.
+		onpagehide	<body>					Script that runs when a user navigates away from a page.
+		onpageshow	<body>					Script that runs when a user navigates to a page.
+		onpaste	All visible elements.		Script that runs when some content is pasted in an element.
+		onpause	<audio>, <video>			Script that runs when the media is paused.
+		onplay	<audio>, <video>			Script that runs when the media starts playing.
+		onplaying	<audio>, <video>		Script that runs when the media is playing.
+		onpopstate	<body>					Script that runs when the history of the windows changes.
+		onprogress	<audio>, <video>		Script that runs when the browser is in the process of getting the media data.
+		onratechange	<audio>, <video>	Script that runs when the playback rate changes.
+		onreset	<form>	Script that runs when a reset button in a form is clicked.
+		onresize	<body>	Script that runs when the browser window is resized.
+		onscroll	All visible elements.	Script that runs when the scrollbar of an element is being scrolled.
+		onsearch	<input>	Script that runs when the user writes something in a search field.
+		onseeked	<audio>, <video>		Script that runs when the seeking attribute is set to false pointing out that seeking has ended.
+		onseeking	<audio>, <video>		Script that runs when the seeking attribute is set to true and points out that seeking is active.
+		onselect	All visible elements.	Script that runs when the element is selected.
+		onstalled	<audio>, <video>		Script that runs when the browser can’t fetch the media data for some reasons.
+		onstorage	<body>					Script that runs when a Web Storage area is updated.
+		onsubmit	<form>					Script that runs when a form is submitted.
+		onsuspendt	<audio>, <video>		Script that runs when fetching the media data is stopped before it is totally loaded.
+		ontimeupdate	<audio>, <video>	Script that runs when the playing position has changed.
+		ontoggle	<details>				Script that runs when the <details> element is opened or closed.
+		onunload	<body>					Script that runs when a page has unloaded.
+		onvolumechange	<audio>, <video>	Script that runs each time when the volume of a video or audio is changed.
+		onwaiting	<audio>, <video>		Script that runs when the media is paused, but at the same time is expected to continue.
+		onwheel	All visible elements.		Script that runs when the mouse wheel rolls up or down over an element.
+		open	<details>.					Defines that the details should be visible.
+		optimum	<meter>						Defines what value is the optimal value for the gauge.
+		pattern	<input>						Defines a regular expression that the value of an <input> element is checked against.
+		placeholder	<input>, <textarea>		Defines a short hint describing the element’s expected value.
+		poster	<video>						Defines an image that will be shown while the video is downloading, or until the play button is hit by the user.
+		preload	<audio>, <video>			Defines if and how the audio or video should be loaded when the page loads.
+		readonly	<input>, <textarea>		Defines that the element is read-only.
+		rel	<a>, <area>, <link>				Defines the relationship between the current and the linked documents.
+		required	<input>, <textarea>, <select>	Defines that the element should be filled out before the form is submitted.
+		reversed	<ol>					Defines that the list order should be descending. For example 5,4,3...
+		rows	<textarea>					Defines the visible number of lines in a text area.
+		rowspan	<td>, <th>					Defines the number of rows that should be spanned by a table cell.
+		sandbox	<iframe>					Enables an additional set of restrictions for the content within an <iframe> element.
+		scope	<th>						Defines if a header cell is a header for a column, row, or group of columns or rows.
+		selected	<option>				Defines that an option must be pre-selected when the page loads.
+		shape	<area>						Defines the shape of the area.
+		size	<input>, <select>, <embed>, <iframe>	Defines the width, in characters (for <input>) or the number of visible options (for <select>).
+		sizes	<link>, <img>, <source>	Defines the size of the linked resource.
+		span	<col>, <colgroup>			Defines the number of columns to span.
+		spellcheck	Global Attributes		Defines if the grammar and spelling of the element should be checked or not.
+		src	<img>, <source>, <audio>, <video>, <script>, <track>, <embed>, <iframe>	Defines the URL of the media file.
+		srcdoc	<iframe>					Defines the HTML content of the page that should be shown in the <iframe> element.
+		srclang	<track>						Defines the language of the track text data.
+		srcset	<img>, <source>				Defines the URL of the image that can be used in different situations.
+		start	<ol>						Defines the start value of an ordered list.
+		step	<input>						Defines the legal number intervals for an input field.
+		style	Global Attributes			Defines an inline CSS style for an element.
+		tabindex	Global Attributes		Defines the an element’s tabbing order.
+		target	<a>, <area>, <base>, <form>	Defines the target for where the linked document should be opened or where the form should be submitted.
+		title	Global Attributes			Defines additional information about an element.
+		translate	Global Attributes		Defines additional information about an element.
+		type	<embed>, <input>, <object>, <a>, <button>, <link>, <menu>, <object>, <script>, <source>, <style>	Defines the type of element.
+		usemap	<object>, <img>	Defines an image as a client-side image-map.
+		value	<button>, <input>, <li>, <option>, <meter>, <progress>, <param>	Defines the value of the element.
+		width	<canvas>, <embed>, <iframe>, <img>, <input>, <object>, <video>	Defines the width of the element
+		wrap	<textarea>	Defines how the text in a text area should be wrapped when it is submitted within a form.
+
+
+
+
+CSS Selectors
+		*
+		:active
+		::after
+		::before
+		:checked
+		:default
+		:dir()
+		:disabled
+		:empty
+		:enabled
+		:first-child
+		::first-letter
+		::first-line
+		:first-of-type
+		:focus
+		:fullscreen
+		:hover
+		:in-range
+		:indeterminate
+		:invalid
+		:lang()
+		:last-child
+		:last-of-type
+		:link
+		:not()
+		:nth-child()
+		:nth-last-child
+		:nth-last-of-type()
+		:nth-of-type
+		:only-child
+		:only-of-type
+		:optional
+		:out-of-range
+		::placeholder
+		:read-only
+		:read-write
+		:required
+		:root
+		:scope
+		::selection
+		:target
+		:valid
+		:visited
+		
+CSS Properties
+		align-content
+		align-items
+		all
+		animation
+		align-self
+		animation-delay
+		animation-direction
+		animation-duration
+		animation-fill-mode
+		animation-iteration-count
+		animation-name
+		animation-play-state
+		animation-timing-function
+		appearance
+		backface-visibility
+		background
+		background-attachment
+		background-blend-mode
+		background-clip
+		background-color
+		background-image
+		background-origin
+		background-position
+		background-position-x
+		background-position-y
+		background-repeat
+		background-size
+		bleed
+		block-overflow
+		border
+		border-bottom
+		border-bottom-color
+		border-bottom-left-radius
+		border-bottom-right-radius
+		border-bottom-style
+		border-bottom-width
+		border-collapse
+		border-color
+		border-image
+		border-image-outset
+		border-image-repeat
+		border-image-slice
+		border-image-source
+		border-image-width
+		border-left
+		border-left-color
+		border-left-style
+		border-left-width
+		border-radius
+		border-right
+		border-right-color
+		border-right-style
+		border-right-width
+		border-spacing
+		border-style
+		border-top
+		border-top-color
+		border-top-left-radius
+		border-top-right-radius
+		border-top-style
+		border-top-width
+		border-width
+		bottom
+		box-decoration-break
+		box-shadow
+		box-sizing
+		break-after
+		break-before
+		break-inside
+		caption-side
+		caret-color
+		@charset
+		clear
+		clip
+		clip-path
+		color
+		columns
+		column-count
+		column-fill
+		column-gap
+		column-rule
+		column-rule-color
+		column-rule-style
+		column-rule-width
+		column-span
+		column-width
+		content
+		counter-increment
+		counter-reset
+		cursor
+		direction
+		display
+		empty-cells
+		fill
+		filter
+		flex
+		flex-basis
+		flex-direction
+		flex-flow
+		flex-grow
+		flex-shrink
+		flex-wrap
+		float
+		font
+		@font-face
+		font-display
+		font-family
+		font-feature-settings
+		@font-feature-values
+		font-kerning
+		font-size
+		font-size-adjust
+		font-language-override
+		font-stretch
+		font-style
+		font-variant
+		font-variant-alternates
+		font-variant-caps
+		font-variant-east-asian
+		font-variant-ligatures
+		font-variant-numeric
+		font-weight
+		grid
+		grid-area
+		grid-auto-columns
+		grid-auto-flow
+		grid-auto-rows
+		grid-column
+		grid-column-end
+		grid-column-gap
+		grid-column-start
+		grid-gap
+		grid-row
+		grid-row-end
+		grid-row-gap
+		grid-row-start
+		grid-template
+		grid-template-areas
+		grid-template-columns
+		grid-template-rows
+		hanging-punctuation
+		height
+		hyphens
+		image-rendering
+		@import
+		initial-letter
+		isolation
+		justify-content
+		justify-items
+		@keyframes
+		left
+		letter-spacing
+		line-break
+		line-clamp
+		line-height
+		list-style
+		list-style-image
+		list-style-position
+		list-style-type
+		margin
+		margin-bottom
+		margin-left
+		margin-right
+		margin-top
+		max-height
+		max-lines
+		max-width
+		@media
+		min-height
+		min-width
+		mix-blend-mode
+		object-fit
+		object-position
+		offset
+		offset-anchor
+		offset-distance
+		offset-path
+		offset-position
+		offset-rotate
+		opacity
+		order
+		orphans
+		outline
+		outline-color
+		outline-offset
+		outline-style
+		outline-width
+		overflow
+		overflow-anchor
+		overflow-wrap
+		overflow-x
+		overflow-y
+		padding
+		padding-bottom
+		padding-left
+		padding-right
+		padding-top
+		page-break
+		page-break-after
+		page-break-before
+		page-break-inside
+		perspective
+		perspective-origin
+		place-items
+		pointer-events
+		position
+		quotes
+		resize
+		right
+		scroll-behavior
+		scrollbar
+		shape-outside
+		speak
+		stroke
+		stroke-dasharray
+		stroke-dashoffset
+		stroke-linecap
+		stroke-width
+		tab-size
+		table-layout
+		text-align
+		text-align-last
+		text-combine-upright
+		text-decoration
+		text-decoration-color
+		text-decoration-line
+		text-decoration-skip
+		text-decoration-skip-ink
+		text-decoration-style
+		text-fill-color
+		text-indent
+		text-justify
+		text-orientation
+		text-overflow
+		text-rendering
+		text-shadow
+		text-stroke
+		text-stroke-color
+		text-stroke-width
+		text-transform
+		text-underline-position
+		top
+		transform
+		transform-origin
+		transform-style
+		transition
+		transition-delay
+		transition-duration
+		transition-property
+		transition-timing-function
+		unicode-bidi
+		unicode-range
+		user-select
+		vertical-align
+		visibility
+		white-space
+		widows
+		width
+		will-change
+		word-break
+		word-spacing
+		word-wrap
+		writing-mode
+		z-index
+		zoom

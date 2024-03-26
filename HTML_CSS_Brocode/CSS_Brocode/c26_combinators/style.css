@@ -1,0 +1,29 @@
+
+#container{
+    border: 2px solid;
+}
+
+
+#container ~ p{
+    background-color: hsl(60, 100%, 70%);
+}
+/*descendant 
+*/
+
+/* child
+#container > p{
+    background-color: hsl(60, 100%, 70%);
+}
+*/
+
+/* general sibling
+#container ~ p{
+    background-color: hsl(60, 100%, 70%);
+}
+*/
+
+/* adjacent sibling
+#container + p{
+    background-color: hsl(60, 100%, 70%);
+}
+*/

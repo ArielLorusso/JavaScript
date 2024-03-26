@@ -1,0 +1,28 @@
+
+/*BY ELEMENTS*/
+body{ 
+    background-color:bisque;
+    border-left-color: blue;}
+
+h1{ background-color: burlywood ;
+    font-weight: bold;
+    border: 5px solid; 
+    text-align: center;
+    border-radius: 20px ; color:darkred; }
+
+p{  background-color:lightpink;
+    padding: 10pt;
+    font-weight: bold;
+    color:darkred}
+
+/*BY ID
+*/
+#p1{ font-style: italic;
+     font-weight: 100;}
+#p2{ border: dashed 2pt; 
+     border-radius: 30pt;}
+
+
+/*BY CLASS*/
+.odd{ background-color:rgb(255, 225, 144);}
+.even{ background-color:rgb(255, 189, 249);}

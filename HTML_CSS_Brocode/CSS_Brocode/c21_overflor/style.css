@@ -1,0 +1,13 @@
+div{
+    border: 2px solid;
+    height: 100px;
+    width: 200px;
+
+    overflow: scroll;  /* When does not fit -> scroll */
+    /*
+    overflow: auto;
+    overflow: hidden;
+    overflow: visible;
+    overflow: clip;     overflow-clip-margin: 13px;
+    */
+}

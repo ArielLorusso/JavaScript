@@ -1,0 +1,78 @@
+/*   /////     RELATIVE     //////  */
+#box1{
+
+    border: 1px solid;
+    height: 300px;
+    width:  300px;
+    background-color: skyblue;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#box2{
+
+    border: 10px solid;
+    height: 100px;
+    width:  100px;
+    color: tomato;
+}
+
+/*   /////     ABSOLUTE     //////  */
+#box3{
+
+    border: 1px solid;
+    height: 100px;
+    width:  100px;
+    position: sticky;
+    bottom: 0;
+    background-color:  indigo;
+}
+
+/*   ////////// PARENT  /////  */
+#box4{
+
+    border: 1px solid;
+    height: 30%;
+    width:  30%;
+    background-color:hsl(29, 76%, 18%);
+
+    position: fixed;
+    right: 10%;
+    top: 0%;
+}
+/*   ////////// CHILD  /////  */
+#box5{
+
+    border: 1px solid;
+    height: 50%;
+    width:  200px;
+    background-color:forestgreen;
+
+    position: relative;
+    right: -5%;
+    bottom: -75%;
+}
+
+
+#box6{
+
+    border: 1px solid;
+    
+
+    width:  90%;
+    height: 100px;
+    background-color:hwb(283 30% 17%);
+}
+#box7{
+
+    border: 1px solid;
+    height: 40%;
+    width:  50%;
+    background-color:rgb(34, 45, 139);
+
+    position: sticky;
+    left: 1ch;
+    top: 1cm;
+}

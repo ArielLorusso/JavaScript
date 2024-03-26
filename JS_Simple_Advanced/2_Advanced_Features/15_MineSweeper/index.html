@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module"></script>
+    <title>Minesweeper</title  >
+</head>
+
+<body>
+    <h3 class="title">Minesweeper</h3>
+    <div class="subtext">
+        Mines Left: <span data-mine-count> ammount </span>
+    </div>
+    <div class="board"></div>
+
+    <div style="display: flex;  align-items: center; height: 30pt;">
+        <h6 > BOARD SIZE </h6> 
+            <input type="number" id="board_size" 
+            min=3 max=20 step=1  value="6" style="height: 30pt; font-size: 30pt;" >
+        <h6 > MINES </h6> 
+            <input type="number" id="mines" 
+            min=3 max=2000 step=1   style="height: 30pt; font-size: 30pt;">
+            <button id="start"
+            style="height: 30pt; font-size: 30pt;"> START</button>
+    </div>
+</body>
+</html>

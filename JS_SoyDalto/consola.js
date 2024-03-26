@@ -1,0 +1,1 @@
+console.assert(5<4); //flase asertion in console

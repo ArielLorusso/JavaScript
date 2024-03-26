@@ -1,0 +1,237 @@
+JAVASCRIPT
+https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing
+
+
+https://www.youtube.com/watch?v=z95mZVUcJ-E&list=PLE8uP447fYpis_9iiaT1GrdOLmg85pAJB&index=6
+https://github.com/soydalto/curso-de-javascript/blob/main/capitulo%204/problema%202/codigo.js
+https://github.com/RobertoJofreGodoy/Curso_JS_midLevel
+
+HOLAMUNDO
+https://www.youtube.com/playlist?list=PLSnadb41DsdKxcWm4wFElbfM6aUhwHjzL
+https://www.youtube.com/watch?v=0Zb5fgO0ubE
+
+/////////////////////////////////////////////////////////////////////////////////
+CAPITULO 1  VARIABLES y OPERADORES 
+
+
+1) Que es ? 7:30
+
+lenguaje_de_programacion :
+orientado_a_objetos (OOP) con prototpos instancias y clases
+interpretado (script)
+imparativo (statements in sequence)
+dinamico (variable se adapta al dato)
+tipado_devil (flaxible int,char etc..)
+basado en Emacscript 5.1 ,6 ,7 ,8
+
+
+2) Usos 22:25
+
+sitios web dinamicos (front end)
+Frameworks frontend Angular, React Vue.JS
+servidores NodeJs
+movile & Desktops Apps Games etc
+Inteligencia Artificial Tensorflow & Torch
+
+
+3) Formas de Enlace 24:50
+https://developer.mozilla.org/en-US/docs/Web/HTML
+en_linea_HTML: 		<script type="text/javascript"> </script>
+en_fuente_externo:	<script="code.js"> </script>
+como require
+
+
+4) variables 18:00
+
+comprtamiento:  Declaracion inicialisacion modificacion
+tipos_Dato_primitive: String, int, Boolean, Symbol
+tipos_Varible: 	
+	let  local scope (alcance  bloque)
+	var  global scope (alcance total ) tipo por defecto si no se declara tipo
+	cons inmutable (deve ser iniciaizada al declarar)
+	ej: let num1=1 ,num2=2;
+Valores_espeeciales: 
+	Undefined no inicializada
+	Null inizialiada a valor nulo
+	Nan not a number (operacion matematica con sring)
+scope_hoisting:
+	las funciones pueden llamarse antes de definirse
+ 	las variables no
+propmt() (pedido de entrada texto al usuario)
+alert()  (mensaje para usuario)
+
+
+5) operadores 50:00
+
+asignacion: = += -= *=  >>= <<= |= &= ^=   post incremento: num++ 
+aritmeticos: + - * / ** %  >>  << 
+bitwise:	 ~not |or &and ^xor
+
+6) concatenacion strings 1:03:55
+formas_de_concatenar :
+	con operador +  
+	con metodo .concat()
+	con ticks  `${var1} ${var2}` 
+let saludo ="hola pepe",  preguta="cual es tu edad?", edad =20
+frase = saludo + preggunta + edad.... fuerza edad a string
+frase.concat("?")... metodo string no funsiona en numeros
+
+8) operadores	 1:15:45
+	logicos:	//	 !	  ||  &&; 
+	comparacion:// 	===(mismo valor y tipo) ==(mismo valor) !=  >  <  >= <= 
+ 
+9) camelCase:  1:35:00
+//primera letra de proximas palabras en mayuscula
+//funciones y  metodos de javascript usan esta nomenclatura
+parseInt()  document.getElementById()
+
+10) condicionales:  1:37:00
+//	if(){}; 	else if(a); 	else{};   
+if(true)   {alert("verdadero");}
+
+EJERCICIO 1.... 1:45:40
+/*	preguntar dinero de usuario  
+	mostrarle el helado mas caro que puede comprar
+	mostrar el vuelto
+
+	1:54:58  se puede OPTIMIZAR empezando por los condicionales de mayor Valores
+	y utilizando lambdas como se muestra
+*/
+/////////////////////////////////////////////////////////////////////////////////
+CAPIYTULO 2   ARRAY Y FUNCION  2:00:20
+
+11) Arrays :
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// variable que contiene lista de elementos separados por coma
+let miArray = ['a','b','c',1,2,3];     miArray[0] == 'a'; // TRUE
+
+12) array_asociativo : hash_table
+miArray = {
+	nombre:" Carlos ",
+	color: " negro ",
+	juega: " basketball"
+};									miArray["color"] == 'negro'; // TRUE
+
+
+13) bucles  (loops & statements)	2:24:00
+while(){};	 do{} while();
+for( NAME in NAMES ){};
+for( NAME of NAMES) {};
+break;	  // sale del bloque
+label:    break label;  //sale del bloque en etiqueta
+continue;  // saltea un paso de bucle (bloque)
+
+14) FUNCIONES 3:07:30  sintaxis:
+funcion_normal:
+function name(arg) {}
+funcion_lambda:
+let name = (arg) => {
+	let frase = `Hola ${arg}, como estas?`
+	return frase;}
+lambda_compacta:
+name = arg => `Hola ${arg}, como estas?`
+
+
+15) ejercicios 2   3:33:34
+
+
+/////////////////////////////////////////////////////////////////////////////////
+CAPIYTULO 2   4:05:00  PROG ORIENTADA A OBJETOS
+
+15) que es POO
+	definicion : paradigma metodo de enfrentar tareas
+
+16)	Conceptos  4:11:00
+	clase : estructura de datos y funciones a replicar
+	objeto : instancia de la clase con espacios asignados en mem
+	atributos : variables de la clase
+	metodos : funciones de la clase
+	constructor : metodo que inicializa los atributos
+	this
+
+17) Caracteristicas de la POO
+	Abstraccion : reducir objetos a caracteristicas principales en una clase  
+	Modularidad : desensamblar problemas en tareas mas pequenias reutilizables
+	Jerarquia :  cada clase puede pertenecer a otra mas amplia 
+
+18) Principios de POO 4:26:00
+	Herencia : que una clase hija expanda lo basico de una clase super 
+	Encapsulamiento : datos privados protejidos accesibles solo por metodo
+	Polimorfismo : capacidad de adaptar y expandir los metodos 
+	metodos estaticos :
+	merodos accesores (getters setters):
+
+/////////////////////////////////////////////////////////////////////////////////
+CAPIYTULO 4   5:12:22  METODOS STANDAR
+
+20) METODOS	STRING	
+				padStart()		split()
+startWith()		padEnd()		trim()
+includes()		repeat()		toString()
+indexOf()		concat()		toLowerCase()
+lasIndexOf()	substring()		toUpperCase()	
+
+
+22) METODOS ARRAY
+push()	shift()		sort()
+pop()	unshift()	reverse()	splice()
+
+accesores: 	join() 		slice() 
+repeticion:	filler() 	forEach()  6:00:00
+
+23) OBJETO MATH 6:10:00
+Math.PI 			Math.E
+Math.min(array)
+Math.random()
+/////////////////////////////////////////////////////////////////////////////////
+CAPIYTULO 5   6:58:00   
+
+26)CONSOLE	https://developer.mozilla.org/en-US/docs/Web/API/console/time#syntax
+console.assert(false);		AGRUPACTION				TEMPORISACION
+console.error("mesnage");	group()				time()
+console.clear();			groupEnd()			timeEnd()
+console.log();				groupColapsed()		timeStart()
+console.table();			CONTEO
+console.warn();				count()
+console.dir();				countReset()	
+
+
+/////////////////////////////////////////////////////////////////////////////////
+CAPIYTULO 7   7:49:00  CONFIGURAR ELEMENTOS
+https://developer.mozilla.org/en-US/docs/Glossary/DOM
+
+27) EL DOM   (DOCUMENT OBJECT MODEL)
+Document: nodo raiz 
+element: nodo definido por etiqueta HTML
+text: raiz de todo elemento texto  //<text>  </text>
+attribute: src="codigo" //  <script src="codigo">  </script>
+acompanian a la etiqueta
+
+
+
+Name					Value
+ELEMENT_NODE			1
+ATTRIBUTE_NODE			2
+TEXT_NODE				3
+CDATA_SECTION_NODE		4
+ENTITY_REFERENCE_NODE	5
+ENTITY_NODE				6
+PROCESSING_INSTRUCTION_NODE	7
+COMMENT_NODE			8
+DOCUMENT_NODE			9
+DOCUMENT_TYPE_NODE		10
+DOCUMENT_FRAGMENT_NODE	11
+NOTATION NODE			12
+
+
+28) METODOS SELECCION
+getElementById()
+getElementByTagName()
+querrySelector()
+querrySelectorAll()
+
+
+29) METODOS DEFINIR
+setAtribute()
+getAtribute()
+romoveAtribute()
