@@ -92,6 +92,7 @@ DATA & STRUCTURE
         console.log(a[123])
         console.log(b['def'])
 
+```Ts
  11 TUPLES
         let a: [number, string]
         a = [1, 'abc']
@@ -117,9 +118,6 @@ DATA & STRUCTURE
         a.size                  // Get length of the Set
         a.has(3)                // True
         .
-.
-OOP
-.
 13 CLASSES   "OBJECT TEMPLATE"
     .
     class Cat {                         // CLASS       
