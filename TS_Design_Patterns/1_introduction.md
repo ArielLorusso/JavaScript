@@ -1,29 +1,34 @@
 https://sbcode.net/typescript/environment_setup/
-NODE 
+# NODE 
 install Node.js first. Open a browser 
         visit https://nodejs.org/en/download/
     Check that NPM exists and works, by typing
+```sh
         npm -v      // 9.8.0
+```
 
-TYPESCRIPT
+# TYPESCRIPT
 install the TypeScript compiler (TSC) globally on our system.
+```sh
         npm install -g typescript
-.
+```
 checking the version number.
+```sh
         tsc -v  // Version 5.1.6
-.
+```
 Download VSCode from https://code.visualstudio.com/
-.
-GITHUB
+
+# GITHUB
 All the code examples in the course can be viewed from my GitHub repository at 
 https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript
-.
+
 If you have Git installed, you can download a copy locally using the command
 git clone https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript.git
 You can install Git for Windows from https://gitforwindows.org/.
 .
 GIT
 To learn GIT we can write in a console "git"
+```sh
 usage: git /*[--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
@@ -65,4 +70,4 @@ collaborate (see also: git help workflows)
 .
 'git help -a' and 'git help -g' list available subcommands and some
 concept guides. See 'git help <command>' or 'git help <concept
- */
+```

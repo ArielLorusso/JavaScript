@@ -1,43 +1,58 @@
-1 GETTING STARTED
-        CREATE test.ts
-        INSTALL TYPES
-                npm install --save @types/node
-        CODE TEST
-            function foo(bar:string) {return 'Hello, '+bar}
-            let baz = 'ABC'
-            console.log(foo(baz))
-        COMPILE
-                tsc ./src/test.ts --outDir ./dist
-        RUN
-                node dist/test
-        MAKE AN ERROR
-                let baz = 123 // 'ASD': string  123: number
-        ERROR OUTPUT
-           "Argument of type 'number' is not assignable to parameter of type 'string'."
-        .
-2 ADDING CONFIGURATION
-        testconfig.json
-        .
-        tsc -p ./src
-3 TSC WATCH 
+# 1 GETTING STARTED
+    CREATE test.ts
+    INSTALL TYPES
+```sh
+    npm install --save @types/node
+```
+    CODE TEST.ts
+```
+    function foo(bar:string) {return 'Hello, '+bar}
+    let baz = 'ABC'
+    console.log(foo(baz))
+```
+    COMPILE
+```sh
+        tsc ./src/test.ts --outDir ./dist
+```
+    RUN
+```sh
+        node dist/test
+```
+    MAKE AN ERROR
+```sh
+        let baz = 123 // 'ASD': string  123: number
+    ERROR OUTPUT
+        "Argument of type 'number' is not assignable to parameter of type 'string'."
+```
+# 2 ADDING CONFIGURATION
+```sh
+    testconfig.json
+    tsc -p ./src'
+```
+# 3 tsC WATCH 
         This process of running   tsc -p ./src   and then seeing the output
         in Node.js using     node ./dist/test.js   for example, can be quite tedious
         if you need to keep typing the tsc and the node commands in turn for every change you make.
-        .
-        Instead, you can run TSC in watch mode, which will cause it to continue running 
+    
+        Instead, you can run tsC in watch mode, which will cause it to continue running 
         and automatically compile and check any changes you make to the TypeScript source files
-                1ST TERMINAL     tsc -p ./src -w
-                2ND TERMINAL     node dist/test
-        .
-.
+```sh           1ST TERMINAL    
+                                tsc -p ./src -w
+```
+```sh           2ND TERMINAL     
+                                node dist/test
+```
+
 DATA & STRUCTURE
-.
-4 LET CONST VAR    https://sbcode.net/typescript/common_types/
+
+# 4 LET CONST VAR    https://sbcode.net/typescript/common_types/
+```ts
         const baz = '123'  // CANT  change
         var baz = '123'    // GLOBAL variavle
         let baz = '123'    // LOCAL  variable 
-        .
-5 TYPES            https://sbcode.net/typescript/common_types/
+```     
+# 5 TYPES            https://sbcode.net/typescript/common_types/
+```ts
         let a1: string
         let b2: boolean
         let c3: number
@@ -48,26 +63,30 @@ DATA & STRUCTURE
             e6 = { 123: 'abc', 456: 'def' } // ( dictionary = hashmap)
         let f7: Set<number>       // SET of numbers
             f7 = new Set([1, 2, 3])
-        .
-6 STRINGS
+```   
+# 6 STRINGS
+```ts
         let foo: string // string type
         foo = 'Lorem Ipsum is simply dummy text of the printing ' // single quote
         foo = ` Bart said : "It wasn't me" ` // Template Literal
-	.
-7 BOOLEAN
+```
+# 7 BOOLEAN
+```ts
         let bar: boolean
         bar = true
         bar = false
-        .
-8 NUMBERS	
+```   
+# 8 NUMBERS	
+```ts
         let baz: number
         baz = 123     //  decimal
         baz = 123.456 //  float
         baz = 0xffff  //  hex
         baz = 0b10101 //  binary
         baz = 0o671   //  octal
-        .
-9 ARRAYS
+```
+# 9 ARRAYS
+```ts
         let a: string[]
             a = ['a', 'b', 'd', 'd']
             a.push('z')    // add an item to the end
@@ -79,8 +98,9 @@ DATA & STRUCTURE
             c = [true, false, true]
         let d: unknown[]
             d = [1, 'a', true, ['even', 'another', 'internal', 'array']]
-        .
-10 DICTIONARIES
+```
+# 10 DICTIONARIES
+```ts
         let a: { [key: number]: string }
             a = { 123: 'abc', 456: 'def' }
             a.123               // GET a[123] .... 'abc'
@@ -88,23 +108,20 @@ DATA & STRUCTURE
         let b: { [key: string]: boolean }
             b = { abc: true, def: false, ghi: true }
         let c: { [id: number]: number[] } // ARRAY as value 
-        .
+    
         console.log(a[123])
         console.log(b['def'])
-
-```Ts
- 11 TUPLES
-        let a: [number, string]
-        a = [1, 'abc']
-        let b: [string, boolean, number]
-        b = ['abc', false, 123]
-        .
-11 TOUPLE STRUCT // TS Struct -> JS typless ARRAY
+```
+# 11 TOUPLE STRUCT 
+```ts
+    //  ts Struct -> JS typless ARRAY
         let a: [number, string]
             a = [1, 'abc']
         let b: [string, boolean, number]
             b = ['abc', false, 123]
-12 SETS  // UNIQUE VALUES
+```
+# 12 SETS    UNIQUE VALUES
+```ts
         let a: Set<number>
             a = new Set([1, 2, 3, 4])  // Set(4) { 1,2,3,4,}
             Array.from(a)              // [ 1,2,3,4 ]
@@ -117,9 +134,10 @@ DATA & STRUCTURE
         Array.from(a)[1]        // Get 2nd item.
         a.size                  // Get length of the Set
         a.has(3)                // True
-        .
-13 CLASSES   "OBJECT TEMPLATE"
-    .
+```
+# 13 CLASSES   "OBJECT TEMPLATE"
+```ts
+
     class Cat {                         // CLASS       
         name: string                    // atribute
         stepsWalked: number = 0         // atribute
@@ -134,13 +152,13 @@ DATA & STRUCTURE
             return this.stepsWalked
         }
     }
-    .
+    
     const CAT = new Cat('Cosmo')        // OBJ
     CAT.walk(20)                        // 
     console.log( CAT.name +' has walked '+ CAT.totalStep() +' steps.')
-    .
-14 INERFACES "CLASS TEMPLATE"
-    .
+```
+# 14 INERFACES "CLASS TEMPLATE"
+```ts
     interface IAnimal {                  // INTERFACE
         name: string
         age: number
@@ -155,9 +173,10 @@ DATA & STRUCTURE
         feed(food: string, amount: number): void {
             console.log(`Feeding ${this.name} ${amount} kg of ${food}` }
     }  //  interfaces only exist befor  compilation to JS.
-    .
-14.2 EXTENSION
-    .
+```
+# 14.2 EXTENSION
+```ts
+
     class Cat extends Feline {          // CLASS IMPLEMENT 
         isHungry: boolean
         constructor(name: string, age: number, isHungry: boolean) {
@@ -171,28 +190,34 @@ DATA & STRUCTURE
     }
     let titi = new Cat( "Titi",3,true )
     titi.feed("fish",0.1)
-    .
+```
 15 ABSTRACT CLASS
-    .
+```ts
+
     abstract class Animal {
         abstract name: string
         age: number
         constructor(age: number) {
-            //this.name = name // this must now be assigned in the derived class instead
+            //this.name = name  // this must now be assigned in the derived class instead
             this.age = age }
         feed(food: string, amount: number): void {
             console.log(`Feeding ${this.name} ${amount} kg of ${food}` )
         }
     }
-    .
+```
+
 16 PUBLIC ACCES MODIF // default
+```ts
     class Animal {                  
         public   name: string     // ACCES everywhere    
         private   age: number     // ACCES by methodes current class
         protected heig: number    // ACCES by methodes current & child class
     }
-17 STATIC MEMBERS // param & method SHARED between same class objects use less memory
-    .
+```
+# 17 STATIC MEMBERS 
+```ts
+// param & method SHARED between same class objects use less memory
+
     class Circle {
         radius: number
         static readonly PI = 3.14        // static PI only once... same for every circle
@@ -200,29 +225,33 @@ DATA & STRUCTURE
             this.radius = radius
         }
     }
-    .
-18 IMPORT EXPORT 
+
+```
+# 18 IMPORT EXPORT 
+```ts
   test.ts:
     import { Cat, Dog } from './animals'
-    .
+
     const CAT = new Cat('Cosmo', 8)
     console.log(CAT.name)
     const DOG = new Dog('Rusty', 12)
     console.log(DOG.name)
-    ./src/animals.ts
-    .
+/src/animals.ts
+
   animals.ts
     import Animal from './animal'
-    .
+
     export class Cat extends Animal {
         constructor(name: string, age: number) {
             super(name, age)
         }
     }
-    .
+
     export class Dog extends Animal {}
-    .
-19 UML [ UNIFIED MODEL LANG ]
+```
+# 19 UML [ UNIFIED MODEL LANG ]
+```cpp
+
         ╔═════════════════════════╗
         ║       class name{}      ║
         ╠═════════════════════════╣ field = atribute
@@ -237,7 +266,7 @@ DATA & STRUCTURE
     │                        │                   
   CLASS A                  CLASS A      
   .
-  // IMPLEMENTS            // AGREGATES
+  // IMPLEMENts            // AGREGATES
   interface B                CLASS B               
     ∆  CLASS A from B         ᗑ CLASS A has reference to B   
     ┆  must have B methods    ┆  can contain several B objects   
@@ -335,8 +364,8 @@ DATA & STRUCTURE
     ⣰ ⣱ ⣲ ⣳ ⣴ ⣵ ⣶ ⣷ ⣸ ⣹ ⣺ ⣻ ⣼ ⣽ ⣾ ⣿
             
        */
-.
-20 DESIGN PATTERNS
+```
+# 20 DESIGN PATTERNS
     Creational
         Factory
         Abstract Factory
