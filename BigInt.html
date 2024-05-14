@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let big_num = 1234567890123456789;
+        console.log(big_num);
+
+        big_num = window.BigInt("1234567890123456789");
+        big_num += window.BigInt(2);
+        big_num += 2; // Error
+        console.log(big_num);
+    </script>
+</head>
+</html>
