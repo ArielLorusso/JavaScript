@@ -10,6 +10,7 @@ gen_button_2.addEventListener('click', rand_interval)
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API
 // https://www.musicca.com/intervals
+
 const inter_semitone  = 1.059463094359295265 // 2^(1/12)
 const inter_tone      = 1.122462048309372981 // 2^(2/12)
 const inter_second_dis= inter_semitone
@@ -23,6 +24,7 @@ const inter_sixth_dis = 1.587401051968199475 // 2^(8/12)
 const inter_sixth     = 1.681792830507429086 // 2^(9/12)
 const inter_sevent_dis= 1.781797436280678609  // 2^(10/12)
 const inter_seventh   = 1.887748625363386993 // 2^(11/12)
+
 const inter_octave    = 2.0                  // 2^(12/12)
 
 console.log(inter_semitone);
@@ -48,16 +50,27 @@ function rand_maj_min(){
     const oscilators_3 = [  audioCtx.createOscillator(),
                             audioCtx.createOscillator(),
                             audioCtx.createOscillator() ];
+
+     const gainNodes =   [   audioCtx.createGain(),
+                             audioCtx.createGain(),
+                             audioCtx.createGain()];
       
     const frequencies  = [f1, f2, f3];
     
     for (let i = 0; i < oscilators_3.length; i++) {
       const osc = oscilators_3[i];
-      osc.connect(audioCtx.destination);
-      osc.type = 'sine';
+      gainNodes[i].gain.value = 0.33;
+      osc.connect(gainNodes[i]);
+      gainNodes[i].connect(audioCtx.destination);
+      //osc.connect(audioCtx.destination);
+//      osc.type = 'sine';
+      osc.type = 'triangle';
       osc.frequency.value = frequencies[i];
       osc.start();
     }
+    
+    // console.log(oscilators_3)
+    // console.log(gainNodes)
     
     setTimeout(function() {
       for (const osc of oscilators_3) {
